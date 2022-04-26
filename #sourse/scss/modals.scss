@@ -1,0 +1,448 @@
+.modal-content {
+    border: none;
+    border-radius: 10px;
+
+    .btn-close {
+        outline: none;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 2;
+        box-shadow: none;
+    }
+}
+
+#city {
+    .modal-dialog {
+        max-width: 650px;
+    }
+
+    .modal-body {
+        padding: 65px 75px;
+    }
+
+    .title {
+        font-weight: 500;
+        font-size: 18px;
+        color: #1a1a1a;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        color: #808080;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .citybox {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        a {
+            display: block;
+            width: 100%;
+            max-width: 33.333%;
+            flex: 33.333%;
+            margin-bottom: 18px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #7fc4d4;
+        }
+    }
+
+    .typecity {
+        .typecity__title {
+            font-size: 14px;
+            color: #1a1a1a;
+            margin-bottom: 0;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            border-radius: 7px;
+            border: 1px solid #dcdcdc;
+            outline: none;
+            padding-left: 15px;
+            transition: 0.3s;
+
+            &:focus {
+                border: 1px solid #1a1a1a;
+            }
+        }
+
+        .info {
+            font-size: 13px;
+            color: #808080;
+
+            span {
+                color: #7fc4d4;
+            }
+        }
+    }
+
+    .citymodalbtns {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            font-size: 14px;
+            color: #231f20;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 1.8px;
+        }
+
+        button {
+            font-size: 14px;
+            padding: 15px 69px;
+        }
+    }
+}
+
+.signmodal {
+    .modal-dialog {
+        max-width: 650px;
+
+        .modal-body {
+            padding: 50px 75px;
+        }
+    }
+
+    .signmodal__title {
+        font-size: 24px;
+        font-weight: 500;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+    }
+
+    .signmodal__inputfield {
+        margin-bottom: 20px;
+
+        label {
+            color: #1a1a1a;
+            font-size: 14px;
+            margin: 0;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            height: 44px;
+            border-radius: 5px;
+            border: 1px solid #dcdcdc;
+            outline: none;
+            transition: 0.3s;
+            padding-left: 12px;
+        }
+
+        .inpinf {
+            margin: 0;
+            font-size: 13px;
+            color: #808080;
+            font-weight: 500;
+        }
+    }
+
+    .rememberme {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+        margin-bottom: 25px;
+
+        .signmodal__check {
+            input {
+                display: none;
+
+                &:checked {
+                    &+label {
+                        &:after {
+                            background: url('../img/check.svg') no-repeat center / 16px;
+                            border: 1px solid #1a1a1a;
+                        }
+                    }
+                }
+            }
+
+            label {
+                margin: 0;
+                font-size: 14px;
+                color: #1a1a1a;
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 3px;
+                    border: 1px solid #dcdcdc;
+                }
+            }
+        }
+
+        a {
+            text-decoration: underline;
+            color: #1a1a1a;
+            font-size: 14px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    button.blackbtn {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 14px 50px;
+        font-size: 14px;
+    }
+
+    .googlelogin {
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 14px 50px 7px;
+        font-size: 14px;
+        border: 1px solid #231f20;
+        display: block;
+        text-align: center;
+        border-radius: 30px;
+        color: #231f20;
+        font-size: 14px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 500;
+
+        span {
+            display: inline-flex;
+            align-items: center;
+
+            img {
+                margin-right: 15px;
+                margin-top: -3px;
+            }
+        }
+    }
+
+    .infotext {
+        color: #1a1a1a;
+        font-size: 14px;
+
+        a {
+            color: #7fc4d4;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+
+
+
+
+}
+
+.reg {
+    display: none;
+}
+
+.forgonpass {
+    display: none;
+}
+
+
+
+
+@media(max-width:1600.8px) {
+    #city .modal-body {
+        padding: 45px;
+    }
+
+    #city .modal-dialog {
+        max-width: 550px;
+    }
+
+    #city .subtitle {
+        margin-bottom: 20px;
+    }
+
+    #city .citybox a {
+        margin-bottom: 10px;
+    }
+
+    #city .citybox {
+        margin-bottom: 20px;
+    }
+
+    #city .citymodalbtns button {
+        padding: 14px 60px;
+    }
+
+    #city .citymodalbtns {
+        margin-top: 25px;
+    }
+
+    .modal-content .btn-close {
+        right: 20px;
+        top: 20px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .signmodal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .signmodal .modal-dialog .modal-body {
+        padding: 40px 45px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    #city .modal-dialog {
+        max-width: 100%;
+    }
+
+    #city .modal-body {
+        padding: 30px 20px;
+    }
+
+    .modal-content .btn-close {
+        right: 10px;
+        top: 10px;
+    }
+
+    #city .citybox a {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    #city .citymodalbtns a {
+        letter-spacing: 1px;
+    }
+
+    #city .citymodalbtns button {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 12px 25px;
+    }
+
+    .signmodal .signmodal__title {
+        font-size: 18px;
+    }
+
+    .signmodal .modal-dialog .modal-body {
+        padding: 30px 25px;
+    }
+
+    .signmodal .signmodal__inputfield input {
+        height: 40px;
+    }
+
+    .signmodal .signmodal__inputfield {
+        margin-bottom: 10px;
+    }
+
+    .signmodal .rememberme {
+        margin-top: 15px;
+    }
+
+    .signmodal button.blackbtn {
+        padding: 11px 40px;
+    }
+
+    .signmodal .googlelogin {
+        padding: 12px 10px 6px;
+        margin-bottom: 15px;
+        span {
+            letter-spacing: 1px;
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .signmodal button.blackbtn {
+        margin-bottom: 15px;
+    }
+
+    .signmodal .infotext {
+        margin-bottom: 0;
+    }
+
+    .signmodal .forgonpass button.blackbtn {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:360.8px) {
+    .signmodal .rememberme {
+        flex-wrap: wrap;
+    }
+
+    .signmodal .googlelogin span {
+        letter-spacing: normal;
+    }
+
+    .signmodal .modal-dialog .modal-body {
+        padding: 30px 15px;
+    }
+    .signmodal .rememberme .signmodal__check label {
+        font-size: 12px;
+    }
+
+    .signmodal .rememberme a {
+        font-size: 12px;
+    }
+
+    .signmodal .rememberme .signmodal__check label:after {
+        top: -2px;
+    }
+
+    .signmodal .googlelogin span img {
+        margin-right: 8px;
+    }
+
+    .signmodal .googlelogin,
+    .signmodal button.blackbtn,
+    .signmodal .infotext a,
+    .signmodal .infotext a {
+        font-size: 12px;
+    }
+    
+}

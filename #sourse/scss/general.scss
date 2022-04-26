@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Playfair Display', serif;
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icons/icomoon.eot?4ant6g');
+    src:  url('../fonts/icons/icomoon.eot?4ant6g#iefix') format('embedded-opentype'),
+      url('../fonts/icons/icomoon.ttf?4ant6g') format('truetype'),
+      url('../fonts/icons/icomoon.woff?4ant6g') format('woff'),
+      url('../fonts/icons/icomoon.svg?4ant6g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-call:before {
+  content: "\e906";
+}
+.icon-mail:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-twitter:before {
+  content: "\e909";
+}
+.icon-pinterest:before {
+  content: "\e90a";
+}
+.icon-instagram:before {
+  content: "\e90b";
+}
+.icon-heart:before {
+  content: "\e900";
+}
+.icon-shopping-bag:before {
+  content: "\e901";
+}
+.icon-lang-arrow:before {
+  content: "\e902";
+}
+.icon-location:before {
+  content: "\e903";
+}
+.icon-padlock:before {
+  content: "\e904";
+}
+.icon-user:before {
+  content: "\e905";
+}
+
+  
+
+
+
+body,
+html {
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(min-width:1300px) {
+    .container {
+        max-width: 1230px;
+    }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+// button
+.generalsect {
+    padding: 100px 0 120px;
+}
+
+.generalsect_seabg {
+  background-color: #ebfaf7;
+}
+
+.secttitle {
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 80px;
+  position: relative;
+  text-align: center;
+
+  &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 86px;
+      background: #1a1a1a;
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+  }
+}
+
+.blackbtn {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #1a1a1a;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  padding: 18px 79px;
+  border-radius: 30px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  transform: perspective(1px) translateZ(0);
+  border: 1px solid #1a1a1a;
+
+  &:hover {
+      color: #1a1a1a;
+
+      &::before {
+          clip-path: circle(100% at 50% 50%);
+      }
+  }
+
+  &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0;
+      clip-path: circle(0% at 50% 50%);
+      background: #fff;
+      transition: 0.5s;
+      opacity: 1;
+  }
+}
