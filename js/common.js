@@ -27,8 +27,11 @@ $(document).ready(function () {
 
     // product slider
     var swiper = new Swiper(".mySwiper", {
-        // slidesPerView: 4,
-        // spaceBetween: 20,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 700,
         loop: true,
         navigation: {
             nextEl: ".swiper-button-next",
