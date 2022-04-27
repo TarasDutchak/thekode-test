@@ -273,6 +273,10 @@
 
         input {
             display: none;
+
+            &:checked+label {
+                border: 1px solid #1a1a1a;
+            }
         }
 
         label {
@@ -285,7 +289,10 @@
             color: #231f20;
             font-size: 12px;
             font-weight: 700;
-            border: 1px solid #dcdcdc
+            border: 1px solid #dcdcdc;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
         }
     }
 }
