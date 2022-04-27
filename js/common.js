@@ -171,7 +171,16 @@ $(document).ready(function () {
     });
 
 
+    // select styled
+    $(function () {
+        $('select').styler();
+    });
 
+    // catalog page - filter
+    $('.catalog__filtersect-box .title').click(function () {
+        $(this).toggleClass('rotate');
+        $(this).next('.catalog__filtersect-descr').slideToggle();
+    });
 
 
 
