@@ -684,7 +684,9 @@
     }
 }
 
-
+.header__navsect .sublist {
+    box-shadow: rgb(0 0 0 / 10%) 0px 18px 10px
+}
 
 
 @media(max-width:1600.8px) {
@@ -939,7 +941,7 @@
         z-index: 15;
         overflow: scroll;
         transition: 0.5s;
-        transform: translateY(100%);
+        transform: translateY(140%);
 
         &.show {
             transform: translateY(0);
