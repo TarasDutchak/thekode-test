@@ -299,6 +299,10 @@
     }
 }
 
+.filterbtn {
+    display: none;
+}
+
 
 @media(max-width:1600.8px) {
     .breadcrumbs {
@@ -349,9 +353,138 @@
 
 
 
-    
 
 
 
+
+
+}
+
+@media(max-width:991.8px) {
+
+    .catalog__sort {
+        flex-wrap: wrap;
+    }
+
+    .catalog__sort .catalog__showed {
+        order: 1;
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .catalog__pagination {
+        order: 2;
+        width: 100%;
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .catalog__sort .catalog__sortfield {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
+    .catalog__pagination ul {
+        justify-content: flex-end;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .catalog__filtersect {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .filterbtn {
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #dcdcdc;
+        font-weight: 500;
+
+        img {
+            margin-right: 15px;
+        }
+
+    }
+
+    .filetrwrapper {
+        display: none;
+    }
+
+    .catalog-section {
+        padding-top: 0;
+    }
+
+    .catalog__filtersect .catalog__filtersect-box .title {
+        font-size: 16px;
+    }
+
+    .catalog__filtersect .catalog__filtersect-box {
+        padding: 15px 0;
+    }
+
+    .catalog__productssect {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 15px;
+    }
+
+    .catalog__sort {
+        padding-top: 20px;
+    }
+
+    .catalog__sort .catalog__showed {
+        max-width: 60%;
+        flex: 0 0 60%;
+    }
+
+    .catalog__pagination {
+        max-width: 40%;
+        flex: 0 0 40%;
+    }
+
+    .catalog__sort .catalog__sortfield span {
+        display: none;
+    }
+
+    .catalog__sort .catalog__sortfield .jq-selectbox {
+        width: 100%;
+    }
+
+    .sliderprodblock .sliderprodblock__img {
+        height: 200px;
+    }
+
+    .catalog__productssect .sliderprodblock .sliderprodblock__descr .favbtn {
+        top: 0;
+    }
 
 }

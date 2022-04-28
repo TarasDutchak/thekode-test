@@ -185,6 +185,9 @@ $(document).ready(function () {
         $(this).next('.catalog__filtersect-descr').slideToggle();
     });
 
-
+    // filter btn
+    $('.filterbtn').click(function () {
+        $('.filetrwrapper').slideToggle();
+    });
 
 });
