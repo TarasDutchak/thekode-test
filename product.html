@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Товар</title>
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/lib/jquery.formstyler.css">
@@ -287,327 +287,204 @@
         </header>
 
         <main class="main">
-            <div class="breadcrumbs">
+            <div class="breadcrumbs white">
                 <div class="container">
                     <ul>
                         <li><a href="#">Главная</a></li>
-                        <li>Каталог</li>
+                        <li><a href="#">Сумки</a></li>
+                        <li>Louis Vuitton</li>
                     </ul>
-                    <p class="title">Каталог</p>
                 </div>
             </div>
-            <div class="catalog-section">
+
+            <div class="product-section">
                 <div class="container">
                     <div class="row">
-                        <div class="catalog__filtersect">
-                            <div class="filterbtn">
-                                <img src="img/filter.png" alt="filter">
-                                <span>Фильтр</span>
+                        <div class="col-lg-6">
+                            <div class="product-picwrapp">
+                                <div class="podimg">
+                                    <img src="img/prodbigpic.png" alt="img">
+                                </div>
+                                <div class="product__viewbox">
+                                    <span><img src="img/eye.png" alt="eye"> 128 человек </span>просматривают этот товар
+                                </div>
                             </div>
-                            <div class="filetrwrapper">
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Сумки</p>
-                                    <div class="catalog__filtersect-descr">
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="bag1">
-                                            <label for="bag1">Классический</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="bag2">
-                                            <label for="bag2">Портмоне</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="bag3">
-                                            <label for="bag3">Модерн</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Кошельки</p>
-                                    <div class="catalog__filtersect-descr">
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="pormane1">
-                                            <label for="pormane1">Классический</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="pormane2">
-                                            <label for="pormane2">Портмоне</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="pormane3">
-                                            <label for="pormane3">Модерн</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Аксессуары</p>
-                                    <div class="catalog__filtersect-descr">
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="aks1">
-                                            <label for="aks1">Классический</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="aks2">
-                                            <label for="aks2">Портмоне</label>
-                                        </div>
-                                        <div class="catalog__choosebox">
-                                            <input type="checkbox" id="aks3">
-                                            <label for="aks3">Модерн</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Цвет</p>
-                                    <div class="catalog__filtersect-descr p0">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-info">
+                                <p class="title">Сумка Louis Vuitton</p>
+                                <p class="price">$249.00</p>
+                                <p class="descr">
+                                    Коричневая фирменная сумка от Louis Vuitton
+                                    с дополняющим нежным розовым цветом
+                                </p>
+                                <div class="prsett">
+                                    <div class="prcolor">
+                                        <p>Цвет: <span class="attrcolor">Коричневый</span></p>
                                         <div class="catalog__chcolors">
                                             <div class="colfield">
-                                                <input type="radio" name="color" id="color1" checked>
+                                                <input type="radio" name="color" id="color1" checked=""
+                                                    data-color="Коричневий">
                                                 <label for="color1" style="background: #5b463f;"></label>
                                             </div>
                                             <div class="colfield">
-                                                <input type="radio" name="color" id="color2">
+                                                <input type="radio" name="color" id="color2" data-color="Синий">
                                                 <label for="color2" style="background: #8ddbff;"></label>
                                             </div>
                                             <div class="colfield">
-                                                <input type="radio" name="color" id="color3">
+                                                <input type="radio" name="color" id="color3" data-color="Розовий">
                                                 <label for="color3" style="background: #dea8a3;"></label>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Размер</p>
-                                    <div class="catalog__filtersect-descr p0">
+                                    <div class="prsize">
+                                        <p>Размер: <span class="attrcolor">В наличии</span></p>
                                         <div class="catalog__chsize">
                                             <div class="sizefield">
-                                                <input type="radio" name="size" id="size1" checked>
+                                                <input type="radio" name="size" id="size1" checked="">
                                                 <label for="size1">xs</label>
                                             </div>
                                             <div class="sizefield">
-                                                <input type="radio" name="size" id="size2" checked>
+                                                <input type="radio" name="size" id="size2" checked="">
                                                 <label for="size2">s</label>
                                             </div>
                                             <div class="sizefield">
-                                                <input type="radio" name="size" id="size3" checked>
+                                                <input type="radio" name="size" id="size3" checked="">
                                                 <label for="size3">m</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="catalog__filtersect-box">
-                                    <p class="title rotate">Цена</p>
-                                    <div class="catalog__filtersect-descr p0">
-                                        <div class="catalog__chsize">
-                                            <div class="pricefield">
-                                                <input type="radio" name="price" id="price1" checked>
-                                                <label for="price1">$50.00 - $99.99</label>
-                                            </div>
-                                            <div class="pricefield">
-                                                <input type="radio" name="price" id="price2" checked>
-                                                <label for="price2">$100.00 - $399.99</label>
-                                            </div>
-                                            <div class="pricefield">
-                                                <input type="radio" name="price" id="price3" checked>
-                                                <label for="price3">$400.00 - $2999.99</label>
-                                            </div>
-                                        </div>
+                                <div class="prcount">
+                                    <div class="number">
+                                        <span class="minus"><img src="img/select-arrow.png" alt="-"></span>
+                                        <input type="text" value="1" />
+                                        <span class="plus"><img src="img/select-arrow.png" alt="+"></span>
                                     </div>
+                                    <a href="#" class="blackbtn"><span><i class="icon-bag"></i> БОЛЬШЕ
+                                            ТОВАРОВ</span></a>
+                                </div>
+                                <div class="prsoc">
+                                    <a href="#" class="addwishlist"><span class="icon-heart"></span>ДОБАВИТЬ В
+                                        WISHLIST</a>
+                                    <div class="share">
+                                        <span>Поделиться</span>
+                                        <ul class="">
+                                            <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="icon-pinterest"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+
                                 </div>
                             </div>
-
-                        </div>
-
-
-                        <div class="catalog__productssect">
-                            <div class="catalog__sort">
-                                <div class="catalog__showed">
-                                    <p>Показано <span>9 из 47</span> товаров</p>
-                                </div>
-                                <div class="catalog__sortfield">
-                                    <span>Сортировать:</span>
-                                    <select name="" id="">
-                                        <option value="0">Сначала новые</option>
-                                        <option value="1">Сначала дешевые</option>
-                                        <option value="2">Сначала дорогие</option>
-                                        <option value="3">Со скидками</option>
-                                        <option value="4">Самое популярное</option>
-                                    </select>
-                                </div>
-                                <div class="catalog__pagination">
-                                    <ul>
-                                        <li><a href="#"><img src="img/leftarr.png" alt="prev"></a></li>
-                                        <li>1 / 5</li>
-                                        <li><a href="#"><img src="img/rightarr.png" alt="next"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="catalog__products">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr1.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr2.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr3.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr4.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock disabled">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <span class="notavailable-span">Нет в наличии</span>
-                                                    <img src="img/pr1.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="notavbtn" data-bs-toggle="modal" data-bs-target="#rememberme">Сообщить о наличии</a>
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr2.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr4.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr1.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="sliderprodblock">
-                                            <a href="#">
-                                                <div class="sliderprodblock__img">
-                                                    <img src="img/pr2.png" alt="product">
-                                                </div>
-                                            </a>
-                                            <div class="sliderprodblock__descr">
-                                                <a href="#" class="title">CROISSANT MINI</a>
-                                                <p class="colection">Candy Collection </p>
-                                                <p class="price">$360.00</p>
-                                                <button class="favbtn">
-                                                    <i class="icon-heart"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
+
+            <section class="generalsect generalsect_seabg poprodsect">
+                <div class="container">
+                    <h3 class="secttitle">Вам может понравится </h3>
+
+                    <div class="product-slider">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="sliderprodblock">
+                                        <a href="#">
+                                            <div class="sliderprodblock__img">
+                                                <img src="img/product-slide1.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="sliderprodblock__descr">
+                                            <a href="#" class="title">CROISSANT MINI</a>
+                                            <p class="colection">Candy Collection </p>
+                                            <p class="price">$360.00</p>
+                                            <button class="favbtn">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sliderprodblock">
+                                        <a href="#">
+                                            <div class="sliderprodblock__img">
+                                                <img src="img/product-slide2.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="sliderprodblock__descr">
+                                            <a href="#" class="title">CHOCO IN BROWN</a>
+                                            <p class="colection">Candy Collection </p>
+                                            <p class="price">$360.00</p>
+                                            <button class="favbtn">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sliderprodblock">
+                                        <a href="#">
+                                            <div class="sliderprodblock__img">
+                                                <img src="img/product-slide3.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="sliderprodblock__descr">
+                                            <a href="#" class="title">PIE IN PURPLE</a>
+                                            <p class="colection">Candy Collection </p>
+                                            <p class="price">$480.00</p>
+                                            <button class="favbtn">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sliderprodblock">
+                                        <a href="#">
+                                            <div class="sliderprodblock__img">
+                                                <img src="img/product-slide4.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="sliderprodblock__descr">
+                                            <a href="#" class="title">”ZEZE” NECKLACE</a>
+                                            <p class="colection">Candy Collection </p>
+                                            <p class="price">$210.00</p>
+                                            <button class="favbtn">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sliderprodblock">
+                                        <a href="#">
+                                            <div class="sliderprodblock__img">
+                                                <img src="img/product-slide1.png" alt="product">
+                                            </div>
+                                        </a>
+                                        <div class="sliderprodblock__descr">
+                                            <a href="#" class="title">CROISSANT MINI</a>
+                                            <p class="colection">Candy Collection </p>
+                                            <p class="price">$360.00</p>
+                                            <button class="favbtn">
+                                                <i class="icon-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <footer class="footer">
@@ -812,48 +689,6 @@
         </div>
     </div>
 
-    <div class="modal fade signmodal" id="rememberme" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="modal-body">
-                    <div class="enter">
-                        <p class="signmodal__title">Сообщить о появлении в продаже</p>
-                        <form action="#">
-                            <div class="signmodal__inputfield">
-                                <label for="flname">Имя и фамилия *</label>
-                                <input type="text" id="flname">
-                            </div>
-                            <div class="signmodal__inputfield">
-                                <label for="remtel">Номер телефона *</label>
-                                <input type="tel" id="remtel" class="phoneinp">
-                            </div>
-                            <div class="signmodal__inputfield">
-                                <label for="rememail">E-mail *</label>
-                                <input type="tel" id="rememail">
-                            </div>
-                            <button type="submit" class="blackbtn">СООБЩИТЬ О НАЛИЧИИ</button>
-                           
-                           
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Нагадати про товар в наявності - закометив бо хз куда то прикрутити -->
-    <!-- <div class="remembermessage">
-        <button class="remembermessage__close">
-            <img src="img/close.svg" alt="close">
-        </button>
-        <p class="title">
-            Спасибо, мы Вам сообщим 
-        </p>
-        <p class="descr">как только товар появиться в наличии</p>
-    </div> -->
 
     <!-- register -->
 

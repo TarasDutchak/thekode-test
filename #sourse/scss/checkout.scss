@@ -1,0 +1,196 @@
+.checkoutwrapp {
+    padding-top: 35px;
+
+    .title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+    }
+}
+
+.methodopl {
+    label {
+        cursor: pointer;
+        margin: 0;
+        height: 68px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 2px solid #dcdcdc;
+        font-size: 12px;
+        font-weight: 600;
+        color: #231f20;
+        transition: 0.3s;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background-image: url('../img/tick.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            right: -9px;
+            top: -9px;
+            border: 2px solid #fff;
+            z-index: 2;
+            background-color: #fff;
+            display: none;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked+label {
+            border: 2px solid #1a1a1a;
+
+            &::after {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.choosemethod {
+    margin-bottom: 35px;
+}
+
+.addinformation {
+    .infotext {
+        font-size: 14px;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        margin-bottom: 10px;
+    }
+
+    .inpfield {
+        margin-bottom: 20px;
+
+        label {
+            margin: 0;
+            font-size: 14px;
+            color: #1a1a1a;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #dcdcdc;
+            transition: 0.3s;
+            padding-left: 10px;
+
+            &:focus {
+                border: 1px solid #1a1a1a;
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+.perstext {
+    margin-top: 36px;
+    font-size: 12px;
+    color: #1a1a1a;
+    margin-bottom: 0;
+
+    img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -2px;
+        color: #1a1a1a;
+        font-size: 12px;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #1a1a1a;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media(max-width:1199.8px) {
+    .shopcardright.shopcardright__chakout {
+        padding-top: 50px;
+    }
+
+    .methodopl label {
+        border: 1px solid #dcdcdc;
+        height: 56px;
+    }
+
+    .methodopl input:checked+label {
+        border: 1px solid #1a1a1a;
+    }
+
+    .checkoutwrapp .title {
+        margin-bottom: 5px;
+    }
+
+    .addinformation .inpfield {
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .checkoutwrapp .title {
+        font-size: 16px;
+    }
+
+    .checkoutwrapp {
+        padding-top: 15px;
+    }
+
+    .methodopl {
+        margin-bottom: 15px;
+    }
+
+    .methodopl label {
+        height: 50px;
+    }
+
+    .choosemethod {
+        margin-bottom: 5px;
+    }
+
+    .addinformation .infotext {
+        font-size: 12px;
+    }
+
+    .addinformation .inpfield {
+        margin-bottom: 10px;
+    }
+
+    .perstext {
+        margin-top: 16px;
+    }
+
+
+}

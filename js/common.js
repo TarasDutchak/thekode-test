@@ -190,4 +190,58 @@ $(document).ready(function () {
         $('.filetrwrapper').slideToggle();
     });
 
+
+
+    // PRODUCT PAGE
+    $('.prcolor .colfield input').change(function () {
+        $('.attrcolor').text($(this).attr('data-color'))
+    })
+
+    // +-
+    $('.prcount .minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+    });
+    $('.prcount .plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+    });
+
+
+    // SHOPPING CARD
+    $('.removerow').click(function () {
+        $(this).parents('.shopcard__row').remove();
+    });
+
+    if ($(".phoneinp").length) {
+        $('.phoneinp').inputmask({
+            "mask": "+99 /999/ 9999999",
+            showMaskOnHover: false,
+            showMaskOnFocus: false,
+        });
+    }
+
+    $('.remembermessage__close').click(function () {
+        $(this).parent('.remembermessage').hide();
+    });
+
+    // WISHLIST
+    $('.shopcardleft.wishlits .delete').click(function (e) {
+        e.preventDefault();
+        $(this).parents('.shopcard__row').remove();
+    });
+
+
+
+
+
+
+
+
 });

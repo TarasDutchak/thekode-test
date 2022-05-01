@@ -1,0 +1,88 @@
+.shopcardleft.wishlits {
+    .shopcardleft__header .shopcard__row .shopcard__descr {
+        max-width: 26%;
+        flex: 0 0 26%;
+    }
+
+    .shopcardleft__header .shopcard__row .shopcard__price {
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    .shopcardleft__header .shopcard__row  .shopcard__cnt {
+        width: 100%;
+        max-width: 23%;
+        flex: 0 0 23%;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        color: #231f20;
+        text-align: right;
+    }
+
+    .shopcardleft__body .shopcard__row .shopcard__img {
+        max-width: 21%;
+        flex: 0 0 21%;
+    }
+
+    .shopcardleft__body .shopcard__row .shopcard__descr {
+        max-width: 26%;
+        flex: 0 0 26%;
+    }
+
+    .shopcardleft__body .shopcard__row .shopcard__price {
+        max-width: 30%;
+        flex: 0 0 30%;
+    }
+
+    .shopcardleft__body .shopcard__row .shopcard__num {
+        max-width: 23%;
+        flex: 0 0 23%;
+
+        .blackbtn {
+            font-size: 14px;
+            padding: 10px 30px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .delete {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a1a1a;
+            display: block;
+            text-align: center;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media(max-width:991.8px) {
+
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__price {
+        max-width: 22%;
+        flex: 0 0 22%;
+    }
+
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__descr {
+        max-width: 34%;
+        flex: 0 0 34%;
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__img,
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__descr,
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__price,
+    .shopcardleft.wishlits .shopcardleft__body .shopcard__row .shopcard__num {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+
+
+}
