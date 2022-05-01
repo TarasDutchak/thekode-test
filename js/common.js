@@ -237,9 +237,18 @@ $(document).ready(function () {
         $(this).parents('.shopcard__row').remove();
     });
 
+    // ACCOUNT page
 
+    $('.tabcontentwrapper .inpfield .clear').click(function () {
+        $(this).parent('.inpfield').find('input').val('');
+        $(this).parent('.inpfield').find('input').focus();
+    });
 
-
+    if ($(window).width() < 576) {
+        $('.periodwrap .title').click(function () {
+            $('.periodwrap ul').slideToggle();
+        });
+    }
 
 
 

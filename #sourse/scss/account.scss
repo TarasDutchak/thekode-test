@@ -1,0 +1,355 @@
+.accountwrapper {
+    padding: 35px 0 0 0;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: none !important;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: 0 !important;
+    padding: 0;
+    font-size: 16px;
+    color: #231f20 !important;
+    padding: 10px 0;
+    border: none !important;
+
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+
+    border-bottom: 2px solid #231f20 !important;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 125px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.tabheader {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.exit {
+    color: #231f20;
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:hover {
+        color: #7fc4d4;
+    }
+}
+
+.tabcontentwrapper {
+    padding-top: 35px;
+    padding-bottom: 100px;
+
+    form {
+        max-width: 500px;
+
+    }
+
+    .inpfield {
+        position: relative;
+
+        .clear {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            padding: 3px;
+            width: 20px;
+            height: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 2;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        input {
+            padding-right: 30px;
+        }
+    }
+}
+
+.periodwrap {
+
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 0 0 18px;
+
+        li {
+            margin-bottom: 8px;
+
+            a {
+                color: #1a1a1a;
+                font-size: 14px;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #7fc4d4;
+                }
+            }
+        }
+    }
+}
+
+.hist__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    .hist__header-num {
+        width: 100%;
+        max-width: 185px;
+        flex: 0 0 185px;
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+    }
+
+    .hist__header-date {
+        width: 100%;
+        max-width: calc(100% - 185px);
+        flex: 0 0 calc(100% - 185px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            font-size: 18px;
+            color: #1a1a1a;
+
+            &.greentext {
+                color: #50b56f;
+            }
+        }
+    }
+}
+
+.hist__body-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    .hist__body-img {
+        width: 100%;
+        max-width: 185px;
+        flex: 0 0 185px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .hist__body-datails {
+        width: 100%;
+        max-width: 300px;
+        flex: 0 0 300px;
+
+        .infobox .title {
+            color: #231f20;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .infobox .descr {
+            font-size: 14px;
+            color: #929292;
+            margin-bottom: 15px;
+            max-width: 220px;
+        }
+
+        .infobox .size {
+            font-size: 14px;
+            color: #929292;
+            margin: 0 0 3px 0;
+
+            span {
+                color: #1a1a1a;
+            }
+        }
+
+        .infobox .color {
+            font-size: 14px;
+            color: #929292;
+            margin-bottom: 20px;
+
+            span {
+                color: #1a1a1a;
+            }
+        }
+
+
+
+
+    }
+
+    .hist__body-price {
+        width: 100%;
+        max-width: calc(100% - 485px);
+        flex: 0 0 calc(100% - 485px);
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #231f20;
+        }
+    }
+}
+
+.periodwrap .title img {
+    display: none;
+}
+@media(max-width:991.8px) {
+    .nav-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .hist__body-row {
+        flex-wrap: wrap;
+    }
+
+    .hist__body-row .hist__body-img,
+    .hist__body-row .hist__body-datails,
+    .hist__body-row .hist__body-price {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .imgwrapp {
+        text-align: center;
+    }
+
+    .infobox {
+        text-align: center;
+    }
+
+    .hist__body-row .hist__body-datails .infobox .descr {
+        margin: 0 auto 20px;
+    }
+
+    .hist__body-row .hist__body-price {
+        text-align: center;
+    }
+
+    .hist__body-row {
+        margin-bottom: 30px;
+    }
+
+    .hist__header .hist__header-num p,
+    .hist__header .hist__header-date span {
+        font-size: 16px;
+    }
+    .hist__header {
+        flex-wrap: wrap;
+    }
+    .hist__header .hist__header-date {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .periodwrap ul {
+        padding-left: 0;
+    }
+
+
+
+
+}
+
+@media(max-width:767.8px) {
+    .tabheader {
+        .col-lg-2 {
+            order: 1;
+        }
+
+        .col-lg-10 {
+            order: 2;
+        }
+    }
+
+    .nav-tabs {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:575.8px) {
+    .nav-item:not(:last-child) {
+        margin: 0;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 5px 0;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 13px;
+    }
+
+    .accountwrapper {
+        padding-top: 25px;
+    }
+
+    .exit {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    .periodwrap {
+        margin-bottom: 25px;
+    }
+    .periodwrap ul li {
+        margin-bottom: 5px;
+    }
+
+
+    .hist__body-row .hist__body-datails .infobox .descr {
+        margin-bottom: 10px;
+    }
+
+    .periodwrap .title img {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .periodwrap ul {
+        display: none;
+    }
+
+    .periodwrap .title {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+}
