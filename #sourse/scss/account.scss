@@ -231,6 +231,15 @@
 .periodwrap .title img {
     display: none;
 }
+
+.footer__logo img {
+    max-width: 200px;
+}
+
+.header__middlesect .header__logo img {
+    max-width: 180px;
+}
+
 @media(max-width:991.8px) {
     .nav-item:not(:last-child) {
         margin-right: 40px;

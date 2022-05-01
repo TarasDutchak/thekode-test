@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="css/lib/swiper.css">
     <link rel="stylesheet" href="css/lib/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/lib/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -110,7 +111,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-4 col-4">
-                            <div class="header__logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+                            <div class="header__logo"><a href="#"><img src="img/black-logo.svg" alt="logo"></a></div>
                         </div>
                         <div class="col-lg-4 col-sm-8 col-8">
                             <div class="header__middleright">
@@ -206,7 +207,7 @@
                 <div class="mobilemenu__wrapper">
                     <div class="mobilemenu__header">
                         <a href="index.html" class="mobilemenu__logo">
-                            <img src="img/logo.png" alt="logo">
+                            <img src="img/black-logo.svg" alt="logo">
                         </a>
                         <span class="closemenu">
                             <img src="img/close.svg" alt="close">
@@ -303,7 +304,22 @@
                         <div class="col-lg-6">
                             <div class="product-picwrapp">
                                 <div class="podimg">
-                                    <img src="img/prodbigpic.png" alt="img">
+                                    <a href="img/prodbigpic.png" data-fancybox="gallery" tabindex="0">
+                                        <img src="img/prodbigpic.png" alt="img">
+                                        <div class="gallery__slide__hover">
+                                            <img src="img/search-icon.svg" alt="img">
+                                        </div>
+                                    </a>
+                                    <div class="galleryhide">
+                                        <a href="img/pr1.png" data-fancybox="gallery" tabindex="0">
+                                        </a>
+                                        <a href="img/pr2.png" data-fancybox="gallery" tabindex="0">
+                                        </a>
+                                        <a href="img/pr3.png" data-fancybox="gallery" tabindex="0">
+                                        </a>
+                                        <a href="img/pr4.png" data-fancybox="gallery" tabindex="0">
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="product__viewbox">
                                     <span><img src="img/eye.png" alt="eye"> 128 человек </span>просматривают этот товар
@@ -351,6 +367,14 @@
                                             <div class="sizefield">
                                                 <input type="radio" name="size" id="size3" checked="">
                                                 <label for="size3">m</label>
+                                            </div>
+                                            <div class="sizefield wauto">
+                                                <input type="radio" name="size" id="size4" checked="">
+                                                <label for="size4">Onesize</label>
+                                            </div>
+                                            <div class="sizefield wauto">
+                                                <input type="radio" name="size" id="size5" checked="">
+                                                <label for="size5">30×18×8</label>
                                             </div>
                                         </div>
                                     </div>
@@ -493,7 +517,7 @@
                     <div class="row">
                         <div class="col-xl-5">
                             <div class="footer__logo">
-                                <a href="index.html"><img src="img/footer-logo.png" alt="logo"></a>
+                                <a href="index.html"><img src="img/white-logo.svg" alt="logo"></a>
                             </div>
                         </div>
                         <div class="col-xl-7">
@@ -697,6 +721,7 @@
     <script src="js/lib/jquery.inputmask.min.js"></script>
     <script src="js/lib/swiper.js"></script>
     <script src="js/lib/jquery.formstyler.min.js"></script>
+    <script src="js/lib/jquery.fancybox.min.js"></script>
     <script src="js/common.js"></script>
 </body>
 
