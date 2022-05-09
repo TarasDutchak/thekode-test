@@ -158,6 +158,26 @@
     display: none;
 }
 
+.newssection{
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        height: 30%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 46%;
+        transform: translateY(-50%);
+        background: #f7f7f7;
+        z-index: -1;
+    }
+}
+
+
+
+
 @media(max-width:1600.8px) {
     .abussect__box .date {
         left: 20px;
@@ -169,6 +189,9 @@
 @media(max-width:991.8px) {
     .newssection {
         padding: 45px 0 60px 0;
+    }
+    .newssection:after {
+        display: none;
     }
 }
 

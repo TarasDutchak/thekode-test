@@ -1,0 +1,277 @@
+.newssection.about {
+    &::after {
+        content: '';
+        display: block;
+        background: #f7f7f7;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 1390px;
+        height: 1100px;
+    }
+}
+
+.aboutsection {
+    position: relative;
+
+
+
+    .descrwrapp {
+        padding-top: 20px;
+    }
+
+    .descrwrapp {
+        padding-left: 30px;
+
+        .descrwrapptext {
+            margin-bottom: 90px;
+
+            p {
+                font-size: 18px;
+                color: #1a1a1a;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .abperc {
+        padding: 45px 0;
+        margin-top: 100px;
+
+        .perc {
+            font-size: 60px;
+            color: #1a1a1a;
+            margin-bottom: 0;
+
+            span {
+                font-size: 36px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+
+        .descr {
+            font-size: 18px;
+            color: #5b5b5b;
+            text-transform: uppercase;
+            padding-left: 40px;
+            letter-spacing: -0.5px;
+        }
+    }
+
+    .abcountpr {
+        position: relative;
+        padding: 25px 0;
+
+        &::after {
+            content: '';
+            display: block;
+            width: calc(100% + 200px);
+            height: 100%;
+            background: #7fc4d4;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .abcountprnum {
+            font-size: 60px;
+            color: #1a1a1a;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .descr {
+            font-size: 18px;
+            color: #5b5b5b;
+            text-transform: uppercase;
+            padding-left: 40px;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .aboutsection-first {
+        margin-bottom: 90px;
+    }
+
+    .descraftpic {
+        p {
+            margin-bottom: 50px;
+            font-size: 18px;
+            color: #1a1a1a;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .smallpic {
+        margin-bottom: 100px;
+    }
+
+    .aboutsection-second {
+        margin-bottom: 100px;
+    }
+
+    .generaltext {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        p {
+            font-size: 18px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+    }
+
+
+
+
+}
+
+.abus-titleit {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    font-size: 26px;
+    color: #1a1a1a;
+    font-style: italic;
+    line-height: 140%;
+}
+
+
+@media(max-width: 1400.8px) {
+    .aboutsection .descrwrapp .descrwrapptext {
+        margin-bottom: 50px;
+    }
+
+    .aboutsection .abperc {
+        margin-top: 50px;
+    }
+
+    .aboutsection .abperc {
+        padding: 30px 0;
+    }
+
+    .aboutsection .abcountpr .descr {
+        padding-left: 50px;
+    }
+
+    .abus-titleit {
+        font-size: 21px;
+        margin-bottom: 60px;
+    }
+
+    .newssection.about:after {
+        top: 1290px;
+    }
+
+
+
+    .aboutsection .descrwrapp .descrwrapptext p,
+    .aboutsection .descraftpic p,
+    .aboutsection .generaltext p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1199.8px) {
+
+    .aboutsection .abperc .perc,
+    .aboutsection .abcountpr .abcountprnum {
+        font-size: 50px;
+    }
+
+    .aboutsection .abperc {
+        margin-top: 30px;
+    }
+
+    .aboutsection .abcountpr .descr,
+    .aboutsection .abperc .descr {
+        margin-bottom: 0;
+    }
+
+    .aboutsection .smallpic {
+        margin-bottom: 30px;
+    }
+
+    .aboutsection .descraftpic p {
+        margin-bottom: 20px;
+    }
+
+    .newssection.about:after {
+        top: 1200px;
+    }
+
+
+
+    .aboutsection .abperc .descr,
+    .aboutsection .abcountpr .descr {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 992.8px) {
+    .aboutsection {
+        .descrwrapp img {
+            width: 100%;
+        }
+
+        .picwrap img {
+            margin-bottom: 30px;
+        }
+
+        .descraftpic {
+            margin-bottom: 30px;
+        }
+    }
+
+    .aboutsection .descrwrapp {
+        padding: 0;
+    }
+
+    .aboutsection .descrwrapp .descrwrapptext {
+        margin-bottom: 30px;
+    }
+
+    .aboutsection .abperc {
+        margin-top: 0;
+    }
+
+    .aboutsection .aboutsection-first {
+        margin-bottom: 80px;
+    }
+
+    .abus-titleit {
+        font-size: 21px;
+        margin-bottom: 30px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .aboutsection .aboutsection-second {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media(max-width: 575.8px) {
+    .aboutsection .aboutsection-first {
+        margin-bottom: 50px;
+    }
+
+    .abus-titleit {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/swiper.css">
+    <link rel="stylesheet" href="css/lib/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header">
+            <div class="header__topline">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header__topline-left">
+                                <div class="header__topline-city">
+                                    <span data-bs-toggle="modal" data-bs-target="#city">
+                                        <i class="icon-location"></i>
+                                        Ивано-Франковск
+                                        <i class="icon-lang-arrow"></i>
+                                    </span>
+                                </div>
+                                <div class="header__topline-lang">
+                                    <span>
+                                        ua
+                                        <i class="icon-lang-arrow"></i>
+                                    </span>
+                                    <ul>
+                                        <li><a href="#">eng</a></li>
+                                        <li><a href="#">ru</a></li>
+                                        <li><a href="#">ua</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header__topline-currency">
+                                    <span>
+                                        usd
+                                        <i class="icon-lang-arrow"></i>
+                                    </span>
+                                    <ul>
+                                        <li><a href="#">uah</a></li>
+                                        <li><a href="#">eur</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="header__topline-right">
+                                <a href="#" class="header__topline-sign" data-bs-toggle="modal" data-bs-target="#sign">
+                                    <i class="icon-user"></i>
+                                    Войти на сайт
+                                </a>
+                                <a href="#" class="header__topline-reg" data-bs-toggle="modal" data-bs-target="#sign">
+                                    <i class="icon-padlock"></i>
+                                    Регистрация
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__middlesect">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-4 header__searchcol">
+                            <div class="header__searchsect">
+                                <div class="header__searchfield">
+                                    <input type="text" placeholder="Искать товар">
+                                    <button class="header__searchbtn"></button>
+                                </div>
+                                <div class="header__searchresult">
+                                    <div class="header__searchresultprods">
+                                        <a href="#">
+                                            <div class="header__searchresult-box">
+                                                <div class="header__searchresult-imgwrap">
+                                                    <img src="img/searchimg1.png" alt="img">
+                                                </div>
+                                                <div class="header__searchresult-descr">
+                                                    <p class="title">KNITTED IDOL (BLACK)</p>
+                                                    <div class="descr">
+                                                        <span class="spantitle">Knitted Collection </span>
+                                                        <span class="price">$260.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="header__searchresult-box">
+                                                <div class="header__searchresult-imgwrap">
+                                                    <img src="img/searchimg2.png" alt="img">
+                                                </div>
+                                                <div class="header__searchresult-descr">
+                                                    <p class="title">KNITTED IDOL (YELLOW)</p>
+                                                    <div class="descr">
+                                                        <span class="spantitle">Knitted Collection </span>
+                                                        <span class="price">$260.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="allresult">ВСЕ РЕЗУЛЬТАТЫ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-4">
+                            <div class="header__logo"><a href="#"><img src="img/black-logo.svg" alt="logo"></a></div>
+                        </div>
+                        <div class="col-lg-4 col-sm-8 col-8">
+                            <div class="header__middleright">
+                                <span class="mobilesearchbtn">
+                                    <img src="img/loupe.svg" alt="search">
+                                </span>
+                                <div class="header__fav">
+                                    <a href="#">
+                                        <img src="img/004-heart.svg" alt="favoritet">
+                                        <span>Список желаний</span>
+                                    </a>
+                                </div>
+                                <div class="header__price">
+                                    <a href="#">
+                                        <span class="header__count">
+                                            <img src="img/005-shopping-bag.svg" alt="img">
+                                            <i class="badge">1</i>
+                                        </span>
+                                        <span class="header__pricebox">$210,33</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="burger">
+                            <img src="img/menu.svg" alt="menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__navsect">
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li class="sublink">
+                            <a href="#">Сумки</a>
+                        </li>
+                        <li>
+                            <a href="#">Кошельки</a>
+                            <ul class="sublist">
+                                <li>Кошельки</li>
+                                <li><a href="#">Кошелек №1</a></li>
+                                <li><a href="#">Кошелек №2</a></li>
+                                <li><a href="#">Кошелек №3</a></li>
+                                <li><a href="#">Кошелек №4</a></li>
+                                <li><a href="#">Кошелек №5</a></li>
+                                <li><a href="#">Кошелек №6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li class="sublinkblog">
+                            <a href="#">Блог</a>
+                            <ul class="sublist sublist__blog">
+                                <li>Последние посты</li>
+                                <li>
+                                    <a href="#">
+                                        <div class="submenupost">
+                                            <div class="submenupost__img">
+                                                <img src="img/menuimg1.png" alt="img">
+                                            </div>
+                                            <div class="submenupost__descr">
+                                                <p class="title">ЛЕТО В ОДНОМ КОШЕЛЬКЕ</p>
+                                                <div class="submenupost__info">
+                                                    <span>05.08.2020</span>
+                                                    <span>2 комментария</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="submenupost">
+                                            <div class="submenupost__img">
+                                                <img src="img/menuimg2.png" alt="img">
+                                            </div>
+                                            <div class="submenupost__descr">
+                                                <p class="title">Стильное Лето</p>
+                                                <div class="submenupost__info">
+                                                    <span>07.08.2020</span>
+                                                    <span>2 комментария</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О бренде</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobilemenu">
+                <div class="mobilemenu__wrapper">
+                    <div class="mobilemenu__header">
+                        <a href="index.html" class="mobilemenu__logo">
+                            <img src="img/black-logo.svg" alt="logo">
+                        </a>
+                        <span class="closemenu">
+                            <img src="img/close.svg" alt="close">
+                        </span>
+                    </div>
+
+                    <div class="mobilemenu__nav">
+                        <ul>
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="#">Сумки</a></li>
+                            <li class="sublink">
+                                <a href="#">Кошельки <i class="icon-lang-arrow"></i></a>
+                                <ul class="sublist">
+                                    <li><a href="#">Кошелек №1</a></li>
+                                    <li><a href="#">Кошелек №2</a></li>
+                                    <li><a href="#">Кошелек №3</a></li>
+                                    <li><a href="#">Кошелек №4</a></li>
+                                    <li><a href="#">Кошелек №5</a></li>
+                                    <li><a href="#">Кошелек №6</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">О бренде</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mobilemenu__sign">
+                        <ul>
+                            <li>
+                                <a href="#" class="header__topline-sign" data-bs-toggle="modal" data-bs-target="#sign">
+                                    <i class="icon-user"></i>
+                                    Войти на сайт
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__topline-reg" data-bs-toggle="modal" data-bs-target="#sign">
+                                    <i class="icon-padlock"></i>
+                                    Регистрация
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mobilemenu__sett">
+                        <div class="header__topline-city">
+                            <span data-bs-toggle="modal" data-bs-target="#city">
+                                <i class="icon-location"></i>
+                                Ивано-Франковск
+                                <i class="icon-lang-arrow"></i>
+                            </span>
+                        </div>
+                        <div class="header__topline-lang">
+                            <span>
+                                ua
+                                <i class="icon-lang-arrow"></i>
+                            </span>
+                            <ul>
+                                <li><a href="#">eng</a></li>
+                                <li><a href="#">ru</a></li>
+                                <li><a href="#">ua</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__topline-currency">
+                            <span>
+                                usd
+                                <i class="icon-lang-arrow"></i>
+                            </span>
+                            <ul>
+                                <li><a href="#">uah</a></li>
+                                <li><a href="#">eur</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <div class="newssection about">
+                <div class="container">
+                    <h1>О БРЕНДЕ</h1>
+                    <div class="aboutsection">
+                        <div class="aboutsection-first">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="picwrap">
+                                        <img src="img/aboutpic1.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="descrwrapp">
+                                        <div class="descrwrapptext">
+                                            <p>
+                                                <b>THE KODE by Tatyana Kodzayeva</b> – это уникальный дизайн, отличное
+                                                качество
+                                                и
+                                                долговечность сумок и аксессуаров.
+                                            </p>
+                                        </div>
+
+                                        <img src="img/aboutpic2.png" alt="img">
+                                        <div class="abperc">
+                                            <p class="perc">
+                                                <span>%</span>120
+                                            </p>
+                                            <p class="descr">
+                                                РОСТ ПРОДАЖИ ЗА ПОСЛЕДНИЙ ГОД
+                                            </p>
+                                        </div>
+                                        <div class="abcountpr">
+                                            <p class="abcountprnum">+ 210 000</p>
+                                            <p class="descr">
+                                                КОЛИЧЕСТВО ПРЕДМЕТОВ ОДЕЖДЫ, ПРОДАЮЩИХСЯ ЕЖЕГОДНО
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aboutsection-second">
+                            <h4 class="abus-titleit">
+                                Каждая деталь бережно подобрана, а дизайн продуман до мелочей.<br> Сумка или украшение
+                                <b>THE
+                                    KODE</b> станет ярким акцентом в гардеробе, а позже – винтажной ценностью.
+                            </h4>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="descrwrapp">
+                                        <div class="descrwrapptext">
+                                            <p>
+                                                Український бренд <b>THE KODE</b> – це естетика, ефектність, акцент та
+                                                якість поза часом.
+                                            </p>
+                                        </div>
+                                        <img class="smallpic" src="img/aboutpic3.png" alt="img">
+                                        <div class="descraftpic">
+                                            <p>
+                                                Уже давно известно, что читабельное содержание будет мешать
+                                                сосредоточиться
+                                                на человеке, который оценивает композицию страницы.
+                                            </p>
+                                            <p>
+                                                Смысл использования Lorem Ipsum заключается в том, что этот текст имеет
+                                                более-менее нормальное распределение букв в отличие от, например, "Здесь
+                                                идет текст. Здесь идет текст." Это делает текст похожим на
+                                                повествовательный.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="picwrap">
+                                        <img src="img/aboutpic4.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <div class="generaltext">
+                            <p>
+                                Уже давно известно, что читабельное содержание будет мешать сосредоточиться на
+                                человеке, который оценивает композицию страницы. Смысл использования Lorem Ipsum
+                                заключается в том, что этот текст имеет более-менее нормальное распределение букв в
+                                отличие от, например, "Здесь идет текст. Здесь идет текст." Это делает текст похожим
+                                на повествовательный.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="subscribesect">
+                <div class="container">
+                    <div class="subscribesect__wrap">
+                        <img class="mailimg" src="img/mail.png" alt="img">
+                        <h3 class="secttitle">Новостная рассылка</h3>
+                        <form action="#">
+                            <input type="text" class="subscribesect__textfield" placeholder="Ваш e-mail">
+                            <button type="submit" class="blackbtn"><span>ПОДПИСАТЬСЯ</span></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="footer__logo">
+                                <a href="index.html"><img src="img/white-logo.svg" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7">
+                            <div class="footer__lists">
+                                <div class="footer__list">
+                                    <p class="title">Меню</p>
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">О бренде</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__list">
+                                    <p class="title">Категории</p>
+                                    <ul>
+                                        <li><a href="#">Сумки</a></li>
+                                        <li><a href="#">Кошельки</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer__list">
+                                    <p class="title">Контакты</p>
+                                    <ul class="footcont">
+                                        <li class="foottel"><a href="tel:380661234580"><i class="icon-call"></i> +380
+                                                (66) 12 345 80</a></li>
+                                        <li class="footmail"><a href="mailto:thekode@gmail.com"><i
+                                                    class="icon-mail"></i> thekode@gmail.com</a></li>
+                                    </ul>
+                                    <ul class="footsoc">
+                                        <li><a href="#" target="_blank"><i class="icon-facebook"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="icon-twitter"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="icon-pinterest"></i></a></li>
+                                        <li><a href="#" target="_blank"><i class="icon-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottsect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-md-6">
+                            <p>© The Kode. All rights reserved. Powered by Tatyana Kodzayeva.</p>
+                        </div>
+                        <div class="col-lg-5 col-md-6">
+                            <div class="footer__banksect">
+                                <img src="img/bank1.png" alt="img">
+                                <img src="img/bank2.png" alt="img">
+                                <img src="img/bank3.png" alt="imgimg">
+                                <img src="img/bank4.png" alt="">
+                                <img src="img/bank5.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="city" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="citymodalwrapper">
+                        <p class="title">Выберите свой город</p>
+                        <p class="subtitle">Доставим по всей Украине</p>
+                        <div class="citybox">
+                            <a href="#">Киев</a>
+                            <a href="#">Запорожье</a>
+                            <a href="#">Тернополь</a>
+                            <a href="#">Львов</a>
+                            <a href="#">Одесса</a>
+                            <a href="#">Харьков</a>
+                        </div>
+                        <form action="#">
+                            <div class="typecity">
+                                <p class="typecity__title">Введите населенный пункт Украины</p>
+                                <input type="text">
+                                <p class="info">Например, <span>Полтава</span></p>
+                            </div>
+                            <div class="citymodalbtns">
+                                <a href="#" data-bs-dismiss="modal">ОТМЕНИТЬ</a>
+                                <button class="blackbtn">ПРИМЕНИТЬ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signmodal" id="sign" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="enter">
+                        <p class="signmodal__title">Вход на сайт</p>
+                        <form action="#">
+                            <div class="signmodal__inputfield">
+                                <label for="signmail">Номер телефона или email</label>
+                                <input type="text" id="signmail">
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="signpass">Пароль</label>
+                                <input type="text" id="signpass">
+                            </div>
+                            <div class="rememberme">
+                                <div class="signmodal__check">
+                                    <input type="checkbox" id="signcheck">
+                                    <label for="signcheck">Запомнить меня</label>
+                                </div>
+                                <a href="#">Забыли пароль?</a>
+                            </div>
+                            <button type="submit" class="blackbtn">ВВОЙТИ</button>
+                            <a href="#" class="googlelogin">
+                                <span>
+                                    <img src="img/googleicon.png" alt="img">
+                                    ПРОДОЛЖИТЬ С GOOGLE
+                                </span>
+                            </a>
+                            <p class="infotext">
+                                Еще нет аккаунта?
+                                <a href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="reg">
+                        <p class="signmodal__title">Регистрация</p>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="signmodal__inputfield">
+                                        <label for="signfname">Имя*</label>
+                                        <input type="text" id="signfname">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="signmodal__inputfield">
+                                        <label for="signlname">Фамилия *</label>
+                                        <input type="text" id="signlname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="tel">Номер телефона</label>
+                                <input type="text" id="tel" class="telinp">
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="pass1">Пароль *</label>
+                                <input type="password" id="pass1">
+                                <p class="inpinf">Не менее 8 символов</p>
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="pass2">Повторите пароль *</label>
+                                <input type="password" id="pass2">
+                            </div>
+                            <button type="submit" class="blackbtn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                            <a href="#" class="googlelogin">
+                                <span>
+                                    <img src="img/googleicon.png" alt="img">
+                                    ПРОДОЛЖИТЬ С GOOGLE
+                                </span>
+                            </a>
+                            <p class="infotext">
+                                Уже есть аккаунт?
+                                <a href="#">ВХОД</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="forgonpass">
+                        <p class="signmodal__title">Восстановление пароля</p>
+                        <form action="#">
+                            <div class="signmodal__inputfield">
+                                <label for="fgpass">E-mail</label>
+                                <input type="email" id="fgpass">
+                            </div>
+                            <button type="submit" class="blackbtn">НАПОМНИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade signmodal" id="rememberme" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="enter">
+                        <p class="signmodal__title">Сообщить о появлении в продаже</p>
+                        <form action="#">
+                            <div class="signmodal__inputfield">
+                                <label for="flname">Имя и фамилия *</label>
+                                <input type="text" id="flname">
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="remtel">Номер телефона *</label>
+                                <input type="tel" id="remtel" class="phoneinp">
+                            </div>
+                            <div class="signmodal__inputfield">
+                                <label for="rememail">E-mail *</label>
+                                <input type="tel" id="rememail">
+                            </div>
+                            <button type="submit" class="blackbtn">СООБЩИТЬ О НАЛИЧИИ</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.inputmask.min.js"></script>
+    <script src="js/lib/swiper.js"></script>
+    <script src="js/lib/jquery.formstyler.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

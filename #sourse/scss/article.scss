@@ -1,0 +1,204 @@
+.breadcrumbs ul {
+    margin-bottom: 0;
+}
+
+.breadcrumbs .title {
+    margin-top: 6px;
+}
+
+.postwrheader {
+    position: relative;
+    padding: 30px 0;
+    padding-right: 100px;
+
+    h1 {
+        font-size: 24px;
+        color: #1a1a1a;
+        font-weight: 400;
+    }
+
+    .postwrcategory {
+        font-size: 14px;
+        color: #1a1a1a;
+    }
+
+    .postwrdate {
+        font-size: 20px;
+        color: #929292;
+        position: absolute;
+        top: 28px;
+        right: 0;
+    }
+}
+
+.postwrbody {
+    .pictextbox {
+        margin-bottom: 80px;
+
+        .textwrapp {
+            padding-top: 40px;
+            padding-right: 25px;
+
+            p {
+                margin-bottom: 45px;
+                font-size: 18px;
+                color: #1a1a1a;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+    }
+
+    &>p {
+        font-size: 18px;
+        color: #1a1a1a;
+        margin-bottom: 40px;
+    }
+
+    &>img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+}
+
+.postwrapper {
+    padding-bottom: 100px;
+
+    .back {
+        margin-top: 30px;
+        display: inline-block;
+        font-size: 14px;
+        color: #1a1a1a;
+        text-decoration: underline;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media(max-width:1600.8px) {
+    .postwrapper {
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .postwrbody .pictextbox .textwrapp {
+        padding-right: 0;
+        padding-top: 0;
+    }
+}
+
+@media(max-width:991.8px) {
+    .postwrapper {
+        padding: 20px 0 40px;
+    }
+
+    .postwrbody .pictextbox .textwrapp p,
+    .postwrbody .pictextbox .textwrapp p:last-child {
+        margin-bottom: 20px;
+    }
+
+    .postwrheader .postwrdate {
+        font-size: 18px;
+    }
+
+    .postwrheader .postwrdate {
+        top: 31px;
+    }
+
+    .postwrheader .postwrcategory {
+        margin-bottom: 0;
+    }
+
+    .postwrbody .pictextbox {
+        margin-bottom: 30px;
+    }
+
+    .postwrbody>p {
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+
+@media(max-width:575.8px) {
+    .postwrheader .postwrdate {
+        position: relative;
+    }
+
+    .postwrheader {
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        h1 {
+            order: 2;
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .postwrcategory {
+            order: 3;
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .postwrdate {
+            order: 1;
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+            text-align: right;
+            margin-bottom: 5px;
+        }
+    }
+
+    .postwrheader h1 {
+        font-size: 21px;
+    }
+
+    .postwrheader {
+        padding-top: 0;
+    }
+
+    .postwrapper {
+        padding: 30px 0 40px;
+    }
+
+    .postwrheader .postwrdate {
+        top: 0;
+        font-size: 14px;
+    }
+
+    .postwrbody .pictextbox .textwrapp p,
+    .postwrbody>p {
+
+        font-size: 16px;
+    }
+
+    .postwrapper .back {
+        margin-top: 0;
+    }
+
+
+
+
+
+
+
+}
