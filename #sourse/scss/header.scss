@@ -688,6 +688,32 @@
     box-shadow: rgb(0 0 0 / 10%) 0px 18px 10px
 }
 
+.header__navsect ul:not(.sublist)>li.sublink {
+   i {
+       font-size: 14px;
+       margin-left: 5px;
+       margin-top: 3px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:1600.8px) {
 

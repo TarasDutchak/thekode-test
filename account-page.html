@@ -144,11 +144,11 @@
                 <nav>
                     <ul>
                         <li class="active"><a href="#">Главная</a></li>
-                        <li class="sublink">
+                        <li>
                             <a href="#">Сумки</a>
                         </li>
-                        <li>
-                            <a href="#">Кошельки</a>
+                        <li class="sublink">
+                            <a href="#">Кошельки <i class="icon-lang-arrow"></i></a>
                             <ul class="sublist">
                                 <li>Кошельки</li>
                                 <li><a href="#">Кошелек №1</a></li>
@@ -316,7 +316,7 @@
                                 </ul>
                             </div>
                             <div class="col-lg-2 col-md-3 text-end">
-                                <a href="#" class="exit">Выход</a>
+                                <a href="#" class="exit"  data-bs-toggle="modal" data-bs-target="#exit">Выход</a>
                             </div>
                         </div>
                     </div>
@@ -671,6 +671,22 @@
         </div>
     </div>
 
+    <div class="modal fade signmodal" id="exit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="exitwrapp">
+                        <p class="signmodal__title">Действительно желаете выйти</p>
+                        <div class="exitbtnsgroup">
+                            <a href="#" class="blackbtn" data-bs-dismiss="modal" aria-label="Close">отменить</a>
+                            <a href="#" class="blackbtn">выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Нагадати про товар в наявності - закометив бо хз куда то прикрутити -->

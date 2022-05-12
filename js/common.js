@@ -194,7 +194,7 @@ $(document).ready(function () {
 
     // PRODUCT PAGE
     $('.prcolor .colfield input').change(function () {
-        $('.attrcolor').text($(this).attr('data-color'))
+        $('.prcolor .attrcolor').text($(this).attr('data-color'))
     })
 
     // +-
