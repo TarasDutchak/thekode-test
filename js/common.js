@@ -127,6 +127,10 @@ $(document).ready(function () {
         $(this).parents('a').next('.sublist').slideToggle();
     });
 
+    $('.mobilemenu .mobilemenu__nav ul.sublist a i').click(function () {
+        $(this).parent().next('.subsublist').slideToggle();
+    });
+
     $('.burger').click(function () {
         $('.mobilemenu').addClass('show');
     });

@@ -400,7 +400,8 @@
             color: #222222;
         }
 
-        img, svg {
+        img,
+        svg {
             width: 32px;
             margin-right: 12px;
         }
@@ -670,11 +671,13 @@
 
 .header__fav a {
     transition: 0.3s;
+
     svg {
         path {
             transition: 0.3s;
         }
     }
+
     &:hover {
         color: #7fc4d4;
 
@@ -689,17 +692,68 @@
 }
 
 .header__navsect ul:not(.sublist)>li.sublink {
-   i {
-       font-size: 14px;
-       margin-left: 5px;
-       margin-top: 3px;
-   }
+    i {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-top: 3px;
+    }
 }
 
 
 
 
+// -------------------
+.header__navsect ul li ul.sublist li {
+    margin-bottom: 0;
 
+    a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+.header__navsect ul:not(.sublist)>li>a+.sublist {
+    padding-left: 0;
+    padding-right: 0;
+
+    li {
+        padding-left: 34px;
+        padding-right: 34px;
+        position: relative;
+
+        a {
+            display: block;
+        }
+    }
+}
+
+
+.header__navsect .subsublist {
+    position: absolute;
+    display: block !important;
+    background: #fff;
+    left: 100%;
+    top: 0;
+    height: auto !important;
+    padding: 10px 0 !important;
+    display: none !important;
+
+    li {
+        margin-bottom: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 10px !important;
+
+        a {
+            display: block !important;
+            text-transform: none;
+            // padding: 5px 10px 5px 20px !important;
+        }
+    }
+}
+
+.header__navsect ul:not(.sublist)>li>a+.sublist li:hover ul.subsublist {
+    display: block !important;
+}
 
 
 
@@ -852,6 +906,7 @@
     .mobilemenu {
         display: block;
     }
+
     .header__topline,
     .header__navsect {
         display: none;
@@ -1129,7 +1184,8 @@
                 }
             }
 
-            .header__topline-currency span, .header__topline-lang span {
+            .header__topline-currency span,
+            .header__topline-lang span {
                 color: #929292;
                 font-size: 20px;
                 font-weight: 500;
@@ -1158,7 +1214,9 @@
 
 
     .mobilemenu {
-        .header__topline-currency ul, .header__topline-lang ul {
+
+        .header__topline-currency ul,
+        .header__topline-lang ul {
             position: relative;
             top: 0;
             padding: 0;
@@ -1173,6 +1231,42 @@
     }
 
 
+
+
+
+
+
+    .mobilemenu .mobilemenu__nav ul.sublist {
+        li {
+            a {
+                i {
+                    font-size: 16px !important;
+                    right: 3px;
+                }
+            }
+        }
+    }
+
+    .subsublist {
+        display: none;
+        padding: 0 10px 0 20px !important;
+
+        li {
+            margin-bottom: 5px !important;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            a {
+                font-size: 16px !important;
+            }
+
+        }
+    }
 
 
 
@@ -1216,6 +1310,7 @@
 
     .mobilemenu .mobilemenu__nav ul.sublist li {
         margin-bottom: 15px !important;
+
         a {
             font-size: 14px;
         }
@@ -1238,16 +1333,19 @@
         font-size: 16px;
     }
 
-    .mobilemenu .mobilemenu__sett .header__topline-currency span, .mobilemenu .mobilemenu__sett .header__topline-lang span {
+    .mobilemenu .mobilemenu__sett .header__topline-currency span,
+    .mobilemenu .mobilemenu__sett .header__topline-lang span {
         font-size: 16px;
         padding-right: 30px;
     }
 
-    .mobilemenu .mobilemenu__sett .header__topline-currency span i, .mobilemenu .mobilemenu__sett .header__topline-lang span i {
+    .mobilemenu .mobilemenu__sett .header__topline-currency span i,
+    .mobilemenu .mobilemenu__sett .header__topline-lang span i {
         font-size: 16px;
     }
 
-    .header__topline-currency span i, .header__topline-lang span i {
+    .header__topline-currency span i,
+    .header__topline-lang span i {
         top: 2px;
     }
 
@@ -1256,7 +1354,9 @@
     }
 
     .mobilemenu {
-        .header__topline-currency ul, .header__topline-lang ul {
+
+        .header__topline-currency ul,
+        .header__topline-lang ul {
             position: relative;
             top: 0;
             padding: 0;
@@ -1270,9 +1370,13 @@
         }
     }
 
+    .subsublist li a {
+        font-size: 14px!important;
+    }
 
-
-
+    .mobilemenu .mobilemenu__nav ul.sublist li .subsublist li {
+        margin-bottom: 5px !important;
+    }
 
 
 }
