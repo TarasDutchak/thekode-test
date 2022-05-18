@@ -737,6 +737,7 @@
     height: auto !important;
     padding: 10px 0 !important;
     display: none !important;
+    box-shadow: rgb(0 0 0 / 10%) 14px 18px 10px;
 
     li {
         margin-bottom: 0 !important;
@@ -1250,6 +1251,7 @@
     .subsublist {
         display: none;
         padding: 0 10px 0 20px !important;
+        
 
         li {
             margin-bottom: 5px !important;
